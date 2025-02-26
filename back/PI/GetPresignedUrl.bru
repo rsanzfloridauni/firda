@@ -1,0 +1,15 @@
+meta {
+  name: GetPresignedUrl
+  type: http
+  seq: 15
+}
+
+get {
+  url: http://localhost:8080/getPresignedUrl?fileName=asd.jpg
+  body: none
+  auth: none
+}
+
+params:query {
+  fileName: asd.jpg
+}

@@ -1,0 +1,9 @@
+# Archivos de Eclipse
+.metadata/
+.classpath
+.project
+.settings/
+api.json
+application.properties
+.expo
+node_modules

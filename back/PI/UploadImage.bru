@@ -1,0 +1,20 @@
+meta {
+  name: UploadImage
+  type: http
+  seq: 16
+}
+
+post {
+  url: http://44.220.1.21:8080/api/upload
+  body: multipartForm
+  auth: none
+}
+
+body:form-urlencoded {
+  : 
+}
+
+body:multipart-form {
+  file: @file(C:\Users\rnavarrete\Downloads\Imagen de WhatsApp 2025-02-12 a las 01.11.32_c727c0d4.jpg)
+  : 
+}

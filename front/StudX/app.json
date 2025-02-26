@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "StudX",
+    "slug": "StudX",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/StudX.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/StudX.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "permissions": [
+        "INTERNET"
+      ],
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/StudX.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.cgpt1a.StudX",
+      "networkSecurityConfig": {
+        "domainConfigs": [
+          {
+            "domain": "44.220.1.21",
+            "cleartextTrafficPermitted": true
+          }
+        ]
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c67c8132-6115-4a12-b40b-9868a35c274b"
+      }
+    }
+  }
+}

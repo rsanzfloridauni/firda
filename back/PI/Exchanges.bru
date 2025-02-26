@@ -1,0 +1,25 @@
+meta {
+  name: Exchanges
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:8080/api/exchanges
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nativeLanguage" : "es",
+    "targetLanguage" : "en",
+    "educationalLevel" : "3eso",
+    "academicLevel" : 3,
+    "beginDate" : "02-02-2024",
+    "endDate" : "03-02-2024",
+    "quantityStudents" : 3,
+    "university" : "Florida",
+    "token" : "436ef23e-ea24-43b3-a151-5e7c923d38bf"
+  }
+}

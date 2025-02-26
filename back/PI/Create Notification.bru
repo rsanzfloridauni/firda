@@ -1,0 +1,22 @@
+meta {
+  name: Create Notification
+  type: http
+  seq: 17
+}
+
+post {
+  url: http://44.220.1.21:8080/api/notifications
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "token": "962976e1-de92-47e0-b5b7-6b97f7e62ba1",
+      "idUserSender": "v",
+      "message": "Hola, tienes una nueva notificación.",
+      "recipient": "gei",
+      "notificationType": "MESSAGE"
+  }
+  
+}

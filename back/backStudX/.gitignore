@@ -1,0 +1,5 @@
+
+/target/
+credentials.json
+application.properties
+/bin/

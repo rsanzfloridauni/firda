@@ -1,0 +1,39 @@
+name: Desplegar y ejecutar en EC2
+
+on:
+  push:
+    branches:
+      - back
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Instalar sshpass
+      - name: Instalar sshpass
+        run: sudo apt-get install sshpass
+
+      - name: Conectarse a EC2 y ejecutar comandos
+        env:
+          EC2_HOST: "44.220.1.21"
+          EC2_USER: "admin"
+          EC2_PASSWORD: ${{ secrets.EC2_PASSWORD }} 
+        run: |
+          # Conectar con EC2, hacer un git pull y hacer checkout a la rama back
+          sshpass -p $EC2_PASSWORD ssh -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST << 'EOF'
+            cd ~/repo/DAM2425_VerdPI/back/backStudX
+            # Hacer pull de la rama 'back'
+            git checkout back
+            git pull origin back
+            # Limpiar, compilar e instalar el proyecto
+            mvn clean install
+           echo "Killing all Java processes..."
+           pkill -f java || true  # Mata todos los procesos Java
+            # Navegar al directorio 'target' y ejecutar el JAR
+            cd target
+            java -jar backStudX-0.0.1-SNAPSHOT.jar &
+            
+            exit
+          EOF

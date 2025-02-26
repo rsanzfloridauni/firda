@@ -1,0 +1,25 @@
+name: Crear archivo en EC2
+
+on:
+  push:
+    branches:
+      - back
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Instalar sshpass
+      - name: Instalar sshpass
+        run: sudo apt-get install sshpass
+
+      # Paso para conectarse a EC2 y crear el archivo usando la contraseña
+      - name: Conectarse a EC2 y crear prueba.txt
+        env:
+          EC2_HOST: "44.220.1.21"
+          EC2_USER: "admin"
+          EC2_PASSWORD: ${{ secrets.EC2_PASSWORD }}  # Aquí guardas la contraseña como secreto
+        run: |
+          sshpass -p $EC2_PASSWORD ssh -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST "echo 'Este es un archivo de prueba' > ~/prueba.txt"

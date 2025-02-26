@@ -1,0 +1,22 @@
+meta {
+  name: New Group
+  type: http
+  seq: 13
+}
+
+post {
+  url: http://localhost:8080/api/groups
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "token": "31b697f5-9452-4b8a-bd81-22f354c46779",
+    "name": "Intermediate French Group",
+    "languajeLevel": 2,
+    "quantity": 15,
+    "languaje": "French"
+  }
+  
+}
