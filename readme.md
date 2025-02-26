@@ -56,7 +56,7 @@ Key Features:
 
 
 ## Documentation
-- [API Documentation](https://github.com/rxvlc/DAM2425_VerdPI/blob/main/doc/Documentacion_API.pdf)
+- [API Documentation](https://github.com/rxvlc/DAM2425_VerdPI/blob/main/doc/Documentacion_API_English.pdf)
 - [Business model canvas ](https://github.com/rxvlc/DAM2425_VerdPI/blob/main/doc/Business%20model%20canvas.pdf)
 - [Estudio de viabilidad](https://github.com/rxvlc/DAM2425_VerdPI/blob/main/doc/Estudio%20de%20viabilidad.pdf)
 - [INFORME DIARIO SCRUM](https://github.com/rxvlc/DAM2425_VerdPI/blob/main/doc/INFORME%20DIARIO%20SCRUM.pdf)
