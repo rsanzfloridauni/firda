@@ -32,7 +32,6 @@
   <img src="https://avatars.githubusercontent.com/u/65158117?v=4" alt="Avatar" width="80" height="80" style="margin-right: 10px;">
   <div>
     <p><strong>Name:</strong> Rafa</p>
-    <p><strong>Email:</strong> ranagi@alumnatflorida.com</p>
   </div>
 </div>
 
