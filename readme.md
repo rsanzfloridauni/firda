@@ -11,7 +11,6 @@
   <img src="https://avatars.githubusercontent.com/u/151029683?v=4" alt="Avatar" width="80" height="80" style="margin-right: 10px;">
   <div>
     <p><strong>Name:</strong> Manu</p>
-    <p><strong>Email:</strong> manugamu@gmail.com</p>
   </div>
 </div>
 
@@ -19,7 +18,6 @@
   <img src="https://avatars.githubusercontent.com/u/158317695?v=4" alt="Avatar" width="80" height="80" style="margin-right: 10px;">
   <div>
     <p><strong>Name:</strong> Sergio</p>
-    <p><strong>Email:</strong> sesaca@alumnatflorida.com</p>
   </div>
 </div>
 
@@ -27,7 +25,6 @@
   <img src="https://avatars.githubusercontent.com/u/151027609?v=4" alt="Avatar" width="80" height="80" style="margin-right: 10px;">
   <div>
     <p><strong>Name:</strong> Victor</p>
-    <p><strong>Email:</strong> vibefre@alumnatflorida.com</p>
   </div>
 </div>
 
